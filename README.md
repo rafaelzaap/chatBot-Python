@@ -1,2 +1,4 @@
-# chatBot-Python
- Criação de um chatBot em Python, para uso  no whatsaap
+## Chatbot
+ **Me chamo Rafael, estou desenvolvendo um pequeno bot para automatizar** 
+ 
+ **envios de mensagens para aniversariantes no dia do seu aniversário.**
