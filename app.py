@@ -12,10 +12,6 @@ sleep(15)
 dados = openpyxl.load_workbook('Assets\Dados.xlsx')
 paginas_aniversariantes = dados['dados']
 
-def new_func():
-    seta = pyscreeze.locateCenterOnScreen('botao.png')
-    return seta
-
 for linha in paginas_aniversariantes.iter_rows(min_row=2):
     nome = linha[0].value
     telefone = linha[1].value
@@ -28,8 +24,8 @@ for linha in paginas_aniversariantes.iter_rows(min_row=2):
         sleep(10)
         seta = new_func()
         sleep(5)
-        #seta = pyautogui.locateCenterOnScreen('botao.png')
-        #sleep(5)
+        seta = pyautogui.locateCenterOnScreen('botao.png')
+        sleep(5)
         pyautogui.click(seta[0],seta[1])
         sleep(5)
         pyautogui.hotkey('ctrl','W')
